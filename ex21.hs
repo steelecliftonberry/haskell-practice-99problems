@@ -13,3 +13,4 @@ property_index el list n
   | n >= length list = last (insertAt el list n) == el
   | n >= 1 = (insertAt el list n) !! (n-1) == el
   | otherwise = head (insertAt el list n) == el
+  where types = el::Char
